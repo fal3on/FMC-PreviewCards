@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root{
+    --orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --heavy-cyan: hsl(179, 100%, 13%);
+
+    --text-white: hsla(0, 0%, 100%, 0.75);
+    --light-grey: hsl(0, 0%, 95%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif, 'Lexend Deca', 'Big Shoulders Display';
+}
+
+.body{
+    background: var(--light-grey);
+    
+}
+
+.main{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 8em;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    width: 250px;
+    height: auto;
+}
+
+.card-body{
+    margin: 2em;
+}
+
+span, img{
+    padding-bottom: 20px;
+    width: 22%;
+}
+
+h2{
+    color: var(--light-grey);
+    font-family: 'Big Shoulders Display';
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    font-weight: 700;
+}
+
+p{
+    color: var(--text-white);
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+    font-size: 12px;
+    padding-bottom: 30px;
+    line-height: 1.5;
+}
+
+.b-box{
+    padding-bottom: 10px;
+}
+
+.button{
+    background: var(--light-grey);
+    padding: .7em 1.5em;
+    border-radius: 100px;
+    font-family: 'Lexend Deca';
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.button:hover{
+    background: none;
+    color: var(--light-grey);
+    border: 2px solid var(--light-grey);
+}
+
+.orange{
+    color: var(--orange);
+}
+
+.cyan{
+    color: var(--dark-cyan);
+}
+
+.dark-cyan{
+    color: var(--heavy-cyan);
+}
+
+#card-a{
+    background-color: var(--orange);
+    border-radius: 5px 5px 0 0;
+}
+
+#card-b{
+    background-color: var(--dark-cyan);
+}
+
+#card-c{
+    background-color: var(--heavy-cyan);
+    border-radius: 0 0 5px 5px;
+}
+
+@media (min-width: 768px){
+    .main{
+        margin: 0;
+    }
+    .container{
+        flex-direction: row;   
+    }
+    .card{
+        width: 30%;
+        height: 370px;
+    }
+    .b-box{
+        padding-top: 3.5em;
+    }
+    #card-a{
+        border-radius: 5px 0px 0 5px;
+    }
+    #card-c{
+        border-radius: 0 5px 5px 0;
+    }
+}
+
+@media (min-width: 769px){
+    .container{
+        max-width: 770px;
+    }
+}
