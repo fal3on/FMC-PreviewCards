@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL](https://your-solution-url.com)
-- Live Site URL: [Live site URL](https://your-live-site-url.com)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-preview-cards-using-css-flexbox--tNP78RGf)
+- Live Site URL: [Live site URL](https://fmc-preview-cards.vercel.app/)
 
 ### Built with
 
